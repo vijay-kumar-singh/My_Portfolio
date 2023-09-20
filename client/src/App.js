@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import StockDetails from './StockDetails';
+import BasicCard from './components/BasicCard';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <BasicCard />
         <StockDetails />
       </header>
     </div>

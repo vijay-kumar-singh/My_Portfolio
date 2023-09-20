@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 const { resolve } = require('path');
 const axios = require('axios');
 
@@ -6,6 +7,7 @@ const app = express();
 const port = 3010;
 
 app.use(express.static('static'));
+app.use(express.json());
 
 app.get('/1', (req, res) => {
   res.sendFile(resolve(__dirname, 'pages/index.html'));
